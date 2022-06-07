@@ -15,4 +15,8 @@ async def on_ready():
 async def ping(interaction: nextcord.Interaction):
     await interaction.send("Pong!")
 
+@bot.slash_command(name="socials",description="Gives link to socials", guild_ids=GUILD_IDS)
+async def socials(interaction: nextcord.Interaction):
+    await interaction.send("https://linktr.ee/apexgamingesports")
+
 bot.run(BOT_TOKEN)
