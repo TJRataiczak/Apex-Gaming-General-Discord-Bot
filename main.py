@@ -11,10 +11,6 @@ bot = commands.Bot()
 async def on_ready():
     print(f'We have logged in as {bot.user}')
 
-@bot.slash_command(name="ping",description="Replys Pong!", guild_ids=GUILD_IDS)
-async def ping(interaction: nextcord.Interaction):
-    await interaction.send("Pong!")
-
 @bot.slash_command(name="socials",description="Gives link to socials", guild_ids=GUILD_IDS)
 async def socials(interaction: nextcord.Interaction):
     await interaction.send("https://linktr.ee/apexgamingesports")
