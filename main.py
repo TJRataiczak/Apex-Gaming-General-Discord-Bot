@@ -39,7 +39,7 @@ async def socials(interaction: nextcord.Interaction):
 
     embed = Embed(title='Apex Gaming | Linktree', description= "Check out all of our social media links here!",color = Color.blue() , url = "https://linktr.ee/apexgamingesports", timestamp=datetime.datetime.now())
     embed.set_thumbnail(url = "https://d1fdloi71mui9q.cloudfront.net/IwzPyzSnTLS8fdpNcS9W_IIKg6H3OYxV5YYVc")
-    embed.set_footer(text="Made by TJ Rataiczak#2710", icon_url="https://cdn.discordapp.com/avatars/352190988178948096/fa7da4b911530180131e51e9499e0cec.png?size=1024")
+    embed.set_footer(text="Developed by TJ Rataiczak#2710", icon_url="https://cdn.discordapp.com/avatars/352190988178948096/fa7da4b911530180131e51e9499e0cec.png?size=1024")
     
     await interaction.send(embed=embed)
     print(interaction.user.avatar)
